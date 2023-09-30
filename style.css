@@ -183,7 +183,7 @@ h2{
     height: 100px;
 }
 .third-section{
-    height: 1080px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -215,7 +215,7 @@ h2{
     width: 60%;
     height: 700px;
 }
-  a.control_prev, a.control_next {
+a.control_prev, a.control_next {
     position: absolute;
     z-index: 999;
     display: flex;
@@ -231,17 +231,24 @@ h2{
     font-size: 18px;
     opacity: 0.8;
     cursor: pointer;
-  }
+}
   
-  a.control_prev:hover, a.control_next:hover {
+a.control_prev:hover, a.control_next:hover {
     opacity: 1;
     transition: all 0.2s ease;
     background: rgba(255, 255, 255, 0.4);
-  }
+}
   
-  a.control_next {
+a.control_next {
     right: 0;
-  }
-  a.control_prev {
+}
+a.control_prev {
     left:0;
-  }
+}
+
+.fourth-section{
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
