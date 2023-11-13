@@ -8,53 +8,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a  href="#main-page">HOME</a></li>
+            <li><a  href="#about-us">ABOUT US</a></li>
+            <li><a  href="#gallery">GALLERY</a></li>
+            <li><a  href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
     <div class="page">
-        <div class="first-section" id="first-section">
-            <div class="left-side">
-                <!-- <img src="photo/water-bg.jpg" alt="diver" width="940px"> -->
+        <div class="main-page" id="main-page">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#main-page">HOME</a></li>
+                  <li><a class="menu__item" href="#about-us">ABOUT US</a></li>
+                  <li><a class="menu__item" href="#gallery">GALLERY</a></li>
+                  <li><a class="menu__item" href="#contact">CONTACT</a></li>
+                </ul>
+              </div>
+            <div class="bg-main-page">
+                        <div class="photo"></div>
             </div>
-            <div class="right-side">
-                <div class="navbar">
-                    <ul class="menu">
-                        <li><a href="#first-section">HOME</a></li>
-                        <li><a href="#second-section">ABOUT US</a></li>
-                        <li><a href="#third-section">GALLERY</a></li>
-                        <li><a href="#fourth-section">CONTACT</a></li>
-                    </ul>
+            <div class="desc-side">
+                <div class="text-water right-slide">
+                    <h1 class="water">FEEL THE WATER <br>
+                                FEEL THE FREEDOM</h1>
                 </div>
-            <div class="first-text">
-                <p class="water">FEEL THE WATER <br>
-                FEEL THE FREEDOM</p>
-                <div class="buttons">
-                    <div class="box">
-                        <a href="#third-section">
-                            <div class="btn btn-on">
-                                <span>GALLERY</span>
-                        </div>
+                    <div class="desc-btn">
+                        <a href="#gallery">
+                            <div class="box">
+                                <div class="btn btn-on">
+                                    <span>GALLERY</span></div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Jezykk?tab=repositories" target="_blank">
+                            <div class="box">
+                                <div class="btn btn-on">
+                                    <span>GITHUB</span></div>
+                            </div>
                         </a>
                     </div>
-                    <div class="box">
-                        <div class="btn btn-on">
-                        <span>PROJECTS</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        </div>
-        <div class="second-section" id="second-section">
-            <div class="up-side">
-                <h1 id="section2">About us</h1>
+        <div class="about-us " id="about-us">
+            <div class="about-us-desc">
+                <h1 >About us</h1>
                 <h2>Welcome to the world of underwater adventure! 
                     We are a team of diving enthusiasts eager to share our love 
                     for the depths of the ocean with you. 
                     Our diving company was born out of a passion for exploring 
                     underwater mysteries and a fascination with marine ecosystems.</h2>
             </div>
-            <div class="down-side">
+            <div class="about-us-icons">
                 <div class="icon">
                     <img src="icons/goggles.png" alt="diven goggles">
                     <p>Above 25 instructors</p>
@@ -69,21 +80,45 @@
                 </div>
             </div>
         </div>
-        <div class="third-section" id="third-section">
+        <div class="gallery" id="gallery">
             <div id="slider">
-                <a href="#" class="control_next">></a>
-                <a href="#" class="control_prev"> < </a>
+                <a href="" class="control_next">></a>
+                <a href="" class="control_prev"> < </a>
             </div>
             <div class="desc-slide">
-                <p id="title">Ibiza</p>
-                <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu libero dignissim, efficitur est sed, lobortis dui. Suspendisse dictum odio dignissim lacinia aliquam. Vivamus eleifend posuere ligula vel gravida. Suspendisse dictum quam sem, et ultricies purus sagittis id. Aenean quis maximus mi. Donec purus dolor, sodales et bibendum consequat, feugiat non sapien. Quisque at viverra odio. Cras quis malesuada dui, nec porta ligula. Aliquam volutpat nisi sit amet augue consectetur lobortis.
-                    Vivamus diam tellus, cursus a lectus nec, pretium ullamcorper nibh. Sed ac ornare magna, eu commodo sapien. Duis cursus porta tincidunt. </p>
+                <img id="slider-image" src="photo/Gallery/2_photo.jpg" alt="Ibiza">
+                <p id="slider-title">Ibiza</p>
+                <p id="desc">Dive into a world where azure waters meet endless horizons, and the vibrant marine life awaits your discovery. Ibiza offers a unique playground for free divers, with its crystal-clear waters and hidden underwater treasures. Whether you're a seasoned free diver or a curious beginner, the island's diverse underwater landscapes promise an unforgettable adventure.
+
+                    Imagine gliding effortlessly through underwater caves adorned with colorful marine life, or exploring the intriguing contours of submerged rock formations. Ibiza's coastline is a haven for those seeking a harmonious blend of tranquility and thrill beneath the surface.
+                    
+                    For the adventurous soul, free diving in Ibiza is more than just a sport—it's a journey into the heart of nature's aquatic wonders. Feel the adrenaline as you descend into the unknown, only to be greeted by the serene beauty of the underwater world. Whether you're drawn to the challenge of reaching new depths or simply reveling in the weightless freedom of the sea, Ibiza's waters offer an unparalleled experience.</p>
             </div>
         </div>
-        <div class="fourth-section" id="fourth-section">
-            <p>WRITE TO US</p>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu libero dignissim, efficitur est sed, lobortis dui. </P>
+        <div class="contact" id="contact">
+            <div class="querries-form">
+                <p id="first-text">WRITE <br>TO US</p>
+                <p id="second-text">Are you looking for information or want to share something important? Use our contact form and write to us now! We are here to help and answer your questions.</p>
+                <div class="contact-form">
+                    <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name...">
+                    <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Your email...">
+                    <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+                        <input id="submit-btn" type="submit" value="Send message" maxlength="500">
+                </div>
+            </div>
+            <div class="querries-picture">
+                    <div class="design-bg">
+                        <img src="photo/sec_bg.png" alt="underwater flowers">
+                    </div>
+            </div>
+            <div class="afterButtonInfo fade-trans-second">
+                <p class="info-text">Message sent successfully. Thank You.</p>
+            </div>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
